@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		915137831A3D76A100F2DB4F /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 915137821A3D76A000F2DB4F /* GoogleMaps.bundle */; };
+		9172EADF1A2B6F0F00F3537E /* Map_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9172EADE1A2B6F0F00F3537E /* Map_ViewController.m */; };
+		917930F71A2B652A00A4D745 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917930F61A2B652A00A4D745 /* GoogleMaps.framework */; };
+		917930FB1A2B675A00A4D745 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917930FA1A2B675A00A4D745 /* AVFoundation.framework */; };
+		917930FD1A2B676400A4D745 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917930FC1A2B676400A4D745 /* CoreData.framework */; };
+		917930FF1A2B676A00A4D745 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917930FE1A2B676A00A4D745 /* CoreLocation.framework */; };
+		917931011A2B676F00A4D745 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931001A2B676F00A4D745 /* CoreText.framework */; };
+		917931031A2B677500A4D745 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931021A2B677500A4D745 /* GLKit.framework */; };
+		917931051A2B677C00A4D745 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931041A2B677C00A4D745 /* ImageIO.framework */; };
+		917931071A2B678A00A4D745 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931061A2B678A00A4D745 /* libc++.dylib */; };
+		917931091A2B679800A4D745 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931081A2B679800A4D745 /* libicucore.dylib */; };
+		9179310B1A2B679E00A4D745 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179310A1A2B679E00A4D745 /* libz.dylib */; };
+		9179310D1A2B67A300A4D745 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179310C1A2B67A300A4D745 /* OpenGLES.framework */; };
+		9179310F1A2B67A900A4D745 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179310E1A2B67A900A4D745 /* QuartzCore.framework */; };
+		917931111A2B67B100A4D745 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931101A2B67B100A4D745 /* SystemConfiguration.framework */; };
+		C194FA241AD06F07002D72E4 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = C194FA231AD06F07002D72E4 /* plus.png */; };
+		C1A0CB761ACC77310022C577 /* MberTVControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0CB751ACC77310022C577 /* MberTVControllerTableViewController.m */; };
+		C1A8F0D51ACF75E100F2A058 /* bwall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1A8F0D41ACF75E100F2A058 /* bwall.jpg */; };
+		C1A8F0D71ACF75F400F2A058 /* SeeYa.ico in Resources */ = {isa = PBXBuildFile; fileRef = C1A8F0D61ACF75F400F2A058 /* SeeYa.ico */; };
+		C1AF5B101A2677050084BD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AF5B0F1A2677050084BD66 /* main.m */; };
+		C1AF5B131A2677050084BD66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AF5B121A2677050084BD66 /* AppDelegate.m */; };
+		C1AF5B161A2677050084BD66 /* SeeYa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1AF5B141A2677050084BD66 /* SeeYa.xcdatamodeld */; };
+		C1AF5B191A2677050084BD66 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AF5B181A2677050084BD66 /* ViewController.m */; };
+		C1AF5B1C1A2677050084BD66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1AF5B1A1A2677050084BD66 /* Main.storyboard */; };
+		C1AF5B1E1A2677050084BD66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1AF5B1D1A2677050084BD66 /* Images.xcassets */; };
+		C1AF5B211A2677050084BD66 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C1AF5B1F1A2677050084BD66 /* LaunchScreen.xib */; };
+		C1AF5B2D1A2677050084BD66 /* SeeYaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1AF5B2C1A2677050084BD66 /* SeeYaTests.m */; };
+		C1D3199E1AD05580004A92DF /* withBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D3199D1AD05580004A92DF /* withBar.m */; };
+		C1D319A61AD06691004A92DF /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = C1D319A51AD06691004A92DF /* check.png */; };
+		C1DCAEE21AD00AEB001BD218 /* library1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DCAEDD1AD00AEB001BD218 /* library1.png */; };
+		C1DCAEE31AD00AEB001BD218 /* meal1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DCAEDE1AD00AEB001BD218 /* meal1.png */; };
+		C1DCAEE41AD00AEB001BD218 /* museum1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DCAEDF1AD00AEB001BD218 /* museum1.png */; };
+		C1DCAEE51AD00AEB001BD218 /* nightclub1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DCAEE01AD00AEB001BD218 /* nightclub1.png */; };
+		C1DCAEE61AD00AEB001BD218 /* park1.png in Resources */ = {isa = PBXBuildFile; fileRef = C1DCAEE11AD00AEB001BD218 /* park1.png */; };
+		C1E153171ACF19A8006CD2C3 /* TagTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E153161ACF19A8006CD2C3 /* TagTable.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1AF5B271A2677050084BD66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1AF5B021A2677050084BD66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1AF5B091A2677050084BD66;
+			remoteInfo = SeeYa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		915137821A3D76A000F2DB4F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		9172EADD1A2B6F0F00F3537E /* Map_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map_ViewController.h; sourceTree = "<group>"; };
+		9172EADE1A2B6F0F00F3537E /* Map_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Map_ViewController.m; sourceTree = "<group>"; };
+		917930F61A2B652A00A4D745 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		917930FA1A2B675A00A4D745 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		917930FC1A2B676400A4D745 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		917930FE1A2B676A00A4D745 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		917931001A2B676F00A4D745 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		917931021A2B677500A4D745 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		917931041A2B677C00A4D745 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		917931061A2B678A00A4D745 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		917931081A2B679800A4D745 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9179310A1A2B679E00A4D745 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9179310C1A2B67A300A4D745 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		9179310E1A2B67A900A4D745 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		917931101A2B67B100A4D745 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C194FA231AD06F07002D72E4 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		C1A0CB741ACC77310022C577 /* MberTVControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MberTVControllerTableViewController.h; sourceTree = "<group>"; };
+		C1A0CB751ACC77310022C577 /* MberTVControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MberTVControllerTableViewController.m; sourceTree = "<group>"; };
+		C1A8F0D41ACF75E100F2A058 /* bwall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bwall.jpg; sourceTree = "<group>"; };
+		C1A8F0D61ACF75F400F2A058 /* SeeYa.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = SeeYa.ico; sourceTree = "<group>"; };
+		C1AF5B0A1A2677050084BD66 /* SeeYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AF5B0E1A2677050084BD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1AF5B0F1A2677050084BD66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1AF5B111A2677050084BD66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1AF5B121A2677050084BD66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1AF5B151A2677050084BD66 /* SeeYa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeeYa.xcdatamodel; sourceTree = "<group>"; };
+		C1AF5B171A2677050084BD66 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C1AF5B181A2677050084BD66 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C1AF5B1B1A2677050084BD66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1AF5B1D1A2677050084BD66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C1AF5B201A2677050084BD66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C1AF5B261A2677050084BD66 /* SeeYaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeeYaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1AF5B2B1A2677050084BD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1AF5B2C1A2677050084BD66 /* SeeYaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeYaTests.m; sourceTree = "<group>"; };
+		C1AF5B361A267EDA0084BD66 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		C1AF5B371A267EDA0084BD66 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C1AF5B391A267EE30084BD66 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C1D0A8EF1AAFCB8B00022B3C /* HelloPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloPage.h; sourceTree = "<group>"; };
+		C1D3199C1AD05580004A92DF /* withBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = withBar.h; sourceTree = "<group>"; };
+		C1D3199D1AD05580004A92DF /* withBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = withBar.m; sourceTree = "<group>"; };
+		C1D319A51AD06691004A92DF /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		C1DCAEDD1AD00AEB001BD218 /* library1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library1.png; sourceTree = "<group>"; };
+		C1DCAEDE1AD00AEB001BD218 /* meal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal1.png; sourceTree = "<group>"; };
+		C1DCAEDF1AD00AEB001BD218 /* museum1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = museum1.png; sourceTree = "<group>"; };
+		C1DCAEE01AD00AEB001BD218 /* nightclub1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nightclub1.png; sourceTree = "<group>"; };
+		C1DCAEE11AD00AEB001BD218 /* park1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = park1.png; sourceTree = "<group>"; };
+		C1E153151ACF19A8006CD2C3 /* TagTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagTable.h; sourceTree = "<group>"; };
+		C1E153161ACF19A8006CD2C3 /* TagTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagTable.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1AF5B071A2677050084BD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				917931111A2B67B100A4D745 /* SystemConfiguration.framework in Frameworks */,
+				9179310F1A2B67A900A4D745 /* QuartzCore.framework in Frameworks */,
+				9179310D1A2B67A300A4D745 /* OpenGLES.framework in Frameworks */,
+				9179310B1A2B679E00A4D745 /* libz.dylib in Frameworks */,
+				917931091A2B679800A4D745 /* libicucore.dylib in Frameworks */,
+				917931071A2B678A00A4D745 /* libc++.dylib in Frameworks */,
+				917931051A2B677C00A4D745 /* ImageIO.framework in Frameworks */,
+				917931031A2B677500A4D745 /* GLKit.framework in Frameworks */,
+				917931011A2B676F00A4D745 /* CoreText.framework in Frameworks */,
+				917930FF1A2B676A00A4D745 /* CoreLocation.framework in Frameworks */,
+				917930FD1A2B676400A4D745 /* CoreData.framework in Frameworks */,
+				917930FB1A2B675A00A4D745 /* AVFoundation.framework in Frameworks */,
+				917930F71A2B652A00A4D745 /* GoogleMaps.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AF5B231A2677050084BD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1A8F0D31ACF75B800F2A058 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C194FA231AD06F07002D72E4 /* plus.png */,
+				C1D319A51AD06691004A92DF /* check.png */,
+				C1DCAEDD1AD00AEB001BD218 /* library1.png */,
+				C1DCAEDE1AD00AEB001BD218 /* meal1.png */,
+				C1DCAEDF1AD00AEB001BD218 /* museum1.png */,
+				C1DCAEE01AD00AEB001BD218 /* nightclub1.png */,
+				C1DCAEE11AD00AEB001BD218 /* park1.png */,
+				C1A8F0D61ACF75F400F2A058 /* SeeYa.ico */,
+				C1A8F0D41ACF75E100F2A058 /* bwall.jpg */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C1AF5B011A2677050084BD66 = {
+			isa = PBXGroup;
+			children = (
+				917931101A2B67B100A4D745 /* SystemConfiguration.framework */,
+				9179310E1A2B67A900A4D745 /* QuartzCore.framework */,
+				9179310C1A2B67A300A4D745 /* OpenGLES.framework */,
+				9179310A1A2B679E00A4D745 /* libz.dylib */,
+				917931081A2B679800A4D745 /* libicucore.dylib */,
+				917931061A2B678A00A4D745 /* libc++.dylib */,
+				917931041A2B677C00A4D745 /* ImageIO.framework */,
+				917931021A2B677500A4D745 /* GLKit.framework */,
+				917931001A2B676F00A4D745 /* CoreText.framework */,
+				917930FE1A2B676A00A4D745 /* CoreLocation.framework */,
+				917930FC1A2B676400A4D745 /* CoreData.framework */,
+				917930FA1A2B675A00A4D745 /* AVFoundation.framework */,
+				C1AF5B0C1A2677050084BD66 /* SeeYa */,
+				C1AF5B291A2677050084BD66 /* SeeYaTests */,
+				C1AF5B0B1A2677050084BD66 /* Products */,
+				917930F61A2B652A00A4D745 /* GoogleMaps.framework */,
+				915137821A3D76A000F2DB4F /* GoogleMaps.bundle */,
+			);
+			sourceTree = "<group>";
+		};
+		C1AF5B0B1A2677050084BD66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF5B0A1A2677050084BD66 /* SeeYa.app */,
+				C1AF5B261A2677050084BD66 /* SeeYaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1AF5B0C1A2677050084BD66 /* SeeYa */ = {
+			isa = PBXGroup;
+			children = (
+				C1A8F0D31ACF75B800F2A058 /* Images */,
+				C1D319A01AD05EB1004A92DF /* 2nd layout */,
+				C1D3199F1AD05E9B004A92DF /* Other */,
+				C1AF5B171A2677050084BD66 /* ViewController.h */,
+				C1AF5B181A2677050084BD66 /* ViewController.m */,
+				9172EADD1A2B6F0F00F3537E /* Map_ViewController.h */,
+				9172EADE1A2B6F0F00F3537E /* Map_ViewController.m */,
+				C1AF5B1A1A2677050084BD66 /* Main.storyboard */,
+				C1AF5B1D1A2677050084BD66 /* Images.xcassets */,
+				C1AF5B1F1A2677050084BD66 /* LaunchScreen.xib */,
+				C1AF5B141A2677050084BD66 /* SeeYa.xcdatamodeld */,
+				C1AF5B0D1A2677050084BD66 /* Supporting Files */,
+			);
+			path = SeeYa;
+			sourceTree = "<group>";
+		};
+		C1AF5B0D1A2677050084BD66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF5B0E1A2677050084BD66 /* Info.plist */,
+				C1AF5B0F1A2677050084BD66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1AF5B291A2677050084BD66 /* SeeYaTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF5B2C1A2677050084BD66 /* SeeYaTests.m */,
+				C1AF5B2A1A2677050084BD66 /* Supporting Files */,
+			);
+			path = SeeYaTests;
+			sourceTree = "<group>";
+		};
+		C1AF5B2A1A2677050084BD66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF5B2B1A2677050084BD66 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1D3199F1AD05E9B004A92DF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C1AF5B111A2677050084BD66 /* AppDelegate.h */,
+				C1AF5B121A2677050084BD66 /* AppDelegate.m */,
+				C1D0A8EF1AAFCB8B00022B3C /* HelloPage.h */,
+				C1A0CB741ACC77310022C577 /* MberTVControllerTableViewController.h */,
+				C1A0CB751ACC77310022C577 /* MberTVControllerTableViewController.m */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		C1D319A01AD05EB1004A92DF /* 2nd layout */ = {
+			isa = PBXGroup;
+			children = (
+				C1D3199C1AD05580004A92DF /* withBar.h */,
+				C1D3199D1AD05580004A92DF /* withBar.m */,
+				C1E153151ACF19A8006CD2C3 /* TagTable.h */,
+				C1E153161ACF19A8006CD2C3 /* TagTable.m */,
+			);
+			name = "2nd layout";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1AF5B091A2677050084BD66 /* SeeYa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AF5B301A2677050084BD66 /* Build configuration list for PBXNativeTarget "SeeYa" */;
+			buildPhases = (
+				C1AF5B061A2677050084BD66 /* Sources */,
+				C1AF5B071A2677050084BD66 /* Frameworks */,
+				C1AF5B081A2677050084BD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeeYa;
+			productName = SeeYa;
+			productReference = C1AF5B0A1A2677050084BD66 /* SeeYa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1AF5B251A2677050084BD66 /* SeeYaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1AF5B331A2677050084BD66 /* Build configuration list for PBXNativeTarget "SeeYaTests" */;
+			buildPhases = (
+				C1AF5B221A2677050084BD66 /* Sources */,
+				C1AF5B231A2677050084BD66 /* Frameworks */,
+				C1AF5B241A2677050084BD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1AF5B281A2677050084BD66 /* PBXTargetDependency */,
+			);
+			name = SeeYaTests;
+			productName = SeeYaTests;
+			productReference = C1AF5B261A2677050084BD66 /* SeeYaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1AF5B021A2677050084BD66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Im Sergey";
+				TargetAttributes = {
+					C1AF5B091A2677050084BD66 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					C1AF5B251A2677050084BD66 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = C1AF5B091A2677050084BD66;
+					};
+				};
+			};
+			buildConfigurationList = C1AF5B051A2677050084BD66 /* Build configuration list for PBXProject "SeeYa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1AF5B011A2677050084BD66;
+			productRefGroup = C1AF5B0B1A2677050084BD66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1AF5B091A2677050084BD66 /* SeeYa */,
+				C1AF5B251A2677050084BD66 /* SeeYaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1AF5B081A2677050084BD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1D319A61AD06691004A92DF /* check.png in Resources */,
+				C1DCAEE61AD00AEB001BD218 /* park1.png in Resources */,
+				C1AF5B1C1A2677050084BD66 /* Main.storyboard in Resources */,
+				C194FA241AD06F07002D72E4 /* plus.png in Resources */,
+				C1AF5B211A2677050084BD66 /* LaunchScreen.xib in Resources */,
+				C1A8F0D51ACF75E100F2A058 /* bwall.jpg in Resources */,
+				C1AF5B1E1A2677050084BD66 /* Images.xcassets in Resources */,
+				C1DCAEE31AD00AEB001BD218 /* meal1.png in Resources */,
+				915137831A3D76A100F2DB4F /* GoogleMaps.bundle in Resources */,
+				C1DCAEE51AD00AEB001BD218 /* nightclub1.png in Resources */,
+				C1DCAEE21AD00AEB001BD218 /* library1.png in Resources */,
+				C1A8F0D71ACF75F400F2A058 /* SeeYa.ico in Resources */,
+				C1DCAEE41AD00AEB001BD218 /* museum1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AF5B241A2677050084BD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1AF5B061A2677050084BD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AF5B161A2677050084BD66 /* SeeYa.xcdatamodeld in Sources */,
+				C1E153171ACF19A8006CD2C3 /* TagTable.m in Sources */,
+				C1AF5B131A2677050084BD66 /* AppDelegate.m in Sources */,
+				C1D3199E1AD05580004A92DF /* withBar.m in Sources */,
+				C1AF5B191A2677050084BD66 /* ViewController.m in Sources */,
+				C1A0CB761ACC77310022C577 /* MberTVControllerTableViewController.m in Sources */,
+				C1AF5B101A2677050084BD66 /* main.m in Sources */,
+				9172EADF1A2B6F0F00F3537E /* Map_ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1AF5B221A2677050084BD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1AF5B2D1A2677050084BD66 /* SeeYaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1AF5B281A2677050084BD66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1AF5B091A2677050084BD66 /* SeeYa */;
+			targetProxy = C1AF5B271A2677050084BD66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1AF5B1A1A2677050084BD66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AF5B1B1A2677050084BD66 /* Base */,
+				C1AF5B361A267EDA0084BD66 /* ru */,
+				C1AF5B391A267EE30084BD66 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1AF5B1F1A2677050084BD66 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1AF5B201A2677050084BD66 /* Base */,
+				C1AF5B371A267EDA0084BD66 /* ru */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1AF5B2E1A2677050084BD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C1AF5B2F1A2677050084BD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1AF5B311A2677050084BD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Korinel/Downloads/GoogleMaps-iOS-1.9.0",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SeeYa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1AF5B321A2677050084BD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Korinel/Downloads/GoogleMaps-iOS-1.9.0",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SeeYa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1AF5B341A2677050084BD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeeYaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeeYa.app/SeeYa";
+			};
+			name = Debug;
+		};
+		C1AF5B351A2677050084BD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeeYaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeeYa.app/SeeYa";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1AF5B051A2677050084BD66 /* Build configuration list for PBXProject "SeeYa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AF5B2E1A2677050084BD66 /* Debug */,
+				C1AF5B2F1A2677050084BD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AF5B301A2677050084BD66 /* Build configuration list for PBXNativeTarget "SeeYa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AF5B311A2677050084BD66 /* Debug */,
+				C1AF5B321A2677050084BD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1AF5B331A2677050084BD66 /* Build configuration list for PBXNativeTarget "SeeYaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1AF5B341A2677050084BD66 /* Debug */,
+				C1AF5B351A2677050084BD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1AF5B141A2677050084BD66 /* SeeYa.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1AF5B151A2677050084BD66 /* SeeYa.xcdatamodel */,
+			);
+			currentVersion = C1AF5B151A2677050084BD66 /* SeeYa.xcdatamodel */;
+			path = SeeYa.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1AF5B021A2677050084BD66 /* Project object */;
+}
