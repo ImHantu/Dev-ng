@@ -16,7 +16,7 @@
 @implementation withBar
 
 - (IBAction)Done:(id)sender {
-    NSLog(@"New1");
+    NSLog(@"New2");
 }
 
 - (void)viewDidLoad {
