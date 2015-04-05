@@ -59,12 +59,7 @@
     {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
-    // иначе возможна только одна галочка
-    /*else
-     {
-     cell.accessoryType = UITableViewCellAccessoryNone;
-     }
-     */
+
     cell.textLabel.text = [students objectAtIndex:indexPath.row];
 
     
@@ -73,9 +68,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-//    NSString *cache = students[indexPath.row];
-//    TagStr = [TagStr stringByAppendingString:cache];
-//    TagStr = [TagStr stringByAppendingString:@"+"];
+
     self.lastIndexPath = indexPath;
     [tableView reloadData];
 

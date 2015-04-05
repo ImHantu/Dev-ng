@@ -46,26 +46,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}*/
-
-//    share!!!!
-/*   NSString *message = @"AIM!";
- 
- NSArray *postItems = @[message];
- 
- UIActivityViewController *activityVC = [[UIActivityViewController alloc]
- initWithActivityItems:postItems
- applicationActivities:nil];
- 
- [self presentViewController:activityVC animated:YES completion:nil]; */
-
 - (IBAction)TextCopy:(UIButton *)sender {
 }
 @end
