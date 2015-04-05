@@ -12,7 +12,8 @@
 #endif
 
 
-@interface TagTable :UITableViewController{
+@interface TagTable :UITableViewController
+{
     NSArray *students;
 }
 

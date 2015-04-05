@@ -15,8 +15,9 @@
 
 @implementation withBar
 
-- (IBAction)Done:(id)sender {
-    NSLog(@"Сделай мне проект, а не катай.");
+- (IBAction)Done:(id)sender
+{
+
 }
 
 - (void)viewDidLoad {
