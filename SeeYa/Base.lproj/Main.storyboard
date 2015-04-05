@@ -77,8 +77,8 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="TextF" destination="WeA-PD-IDX" id="Crw-dH-Mgp"/>
-                        <outlet property="UrText" destination="zy7-F3-Pep" id="HYW-gp-i8W"/>
+                        <outlet property="FrX" destination="WeA-PD-IDX" id="UrJ-sC-1dh"/>
+                        <outlet property="UrX" destination="zy7-F3-Pep" id="fFN-Gh-mN1"/>
                         <outlet property="btn" destination="X55-zD-xf7" id="gwp-9z-wwa"/>
                         <outlet property="plusFriend" destination="Dhc-OA-Na0" id="iuD-Hd-Gp0"/>
                     </connections>

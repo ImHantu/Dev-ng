@@ -10,4 +10,6 @@
 
 @interface withBar : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *Done;
+-(void) queryGooglePlaces: (NSString *) googleType ;
+-(void) fetchedData:(NSData *)responseData;
 @end

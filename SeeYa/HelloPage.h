@@ -12,5 +12,15 @@
 NSString *UrAdress;
 NSString *FrAdress;
 NSString *TagStr;
+NSMutableArray *place1_ad, *place1_cr;
+NSMutableArray *place2_ad, *place2_cr;
+NSMutableArray *place3_ad, *place3_cr;
+NSMutableArray *urcr, *frcr;
+
+
+
+float MainPoint1;
+float MainPoint2;
+
 
 #endif

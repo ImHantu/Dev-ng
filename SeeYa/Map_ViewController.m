@@ -14,17 +14,65 @@
 
 @end
  
-
+NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
 
 
 
 @implementation Map_ViewController
 
+- (void) recieve_coor {
+    NSString *url2 = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=true&key=%@", ad1, KEY];
+    NSURL *googleRequestURL2=[NSURL URLWithString:url2];
+    NSData* data2 = [NSData dataWithContentsOfURL: googleRequestURL2];
+    [self fetchedData1:data2:1];
+    NSString *url3 = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=true&key=%@", ad2, KEY];
+    NSURL *googleRequestURL3=[NSURL URLWithString:url3];
+    NSData* data3 = [NSData dataWithContentsOfURL: googleRequestURL3];
+    [self fetchedData1:data3:2];
+    //[self performSelectorOnMainThread:@selector(fetchedData1::) withObject:data2:ad1 waitUntilDone:YES];
+}
+
+-(void)fetchedData1:(NSData*) responseData: (int) side{
+    //parse out the json data
+    NSError* error1;
+    NSDictionary *json1 = [NSJSONSerialization
+                           JSONObjectWithData:responseData
+                           
+                           options:kNilOptions
+                           error:&error1];
+    
+    NSArray* places = [json1 objectForKey:@"results"];
+    if ([places count] != 0)
+    {
+        //NSLog(@"check1");
+        if(side == 1)
+        {
+            frcr = [NSMutableArray arrayWithObjects:
+                    places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
+        }
+        else{ urcr = [NSMutableArray arrayWithObjects:
+                      places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
+        }
+    };
+}
 
 - (IBAction)btn:(id)sender{
-    FrAdress = self.TextF.text;
-    UrAdress = self.UrText.text;
-    NSLog(@"%@%@",FrAdress,UrAdress);
+    uad = [ self.UrX.text componentsSeparatedByString: @" " ];
+    fad = [ self.FrX.text componentsSeparatedByString: @" " ];
+    ad1 = @"";
+    ad2 = @"";
+    for (int i=0; i<[uad count]; i++ )
+    {
+        ad1 = [ad1 stringByAppendingString: [NSString stringWithFormat:@"%@+", uad[i]]];
+    };
+    ad1 = [ad1 stringByAppendingString:@"Moscow"];
+    for (int i=0; i<[fad count]; i++ )
+    {
+        ad2 = [ad2 stringByAppendingString: [NSString stringWithFormat:@"%@+", fad[i]]];
+    };
+    ad2 = [ad2 stringByAppendingString:@"Moscow"];
+    
+    [self recieve_coor];
 }
 
 

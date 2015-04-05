@@ -81,21 +81,21 @@
 
     switch(indexPath.row) {
         case 0:
-            TagStr = [TagStr stringByAppendingString:@"food+"];
+            TagStr = [TagStr stringByAppendingString:@"cafe&restaurant&"];
             break;
         case 1:
-            TagStr = [TagStr stringByAppendingString:@"store+"];
+            TagStr = [TagStr stringByAppendingString:@"store&"];
             break;
         case 2:
-            TagStr = [TagStr stringByAppendingString:@"library+"];
+            TagStr = [TagStr stringByAppendingString:@"library&"];
             break;
         case 3:
-            TagStr = [TagStr stringByAppendingString:@"night_club+"];
+            TagStr = [TagStr stringByAppendingString:@"night_club&"];
         case 4:
-            TagStr = [TagStr stringByAppendingString:@"museum+"];
+            TagStr = [TagStr stringByAppendingString:@"museum&"];
             break;
         case 5:
-            TagStr = [TagStr stringByAppendingString:@"park+"];
+            TagStr = [TagStr stringByAppendingString:@"park&"];
             break;
         default:
             break;
