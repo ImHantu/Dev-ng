@@ -12,7 +12,8 @@
 #endif
 
 
-@interface TagTable :UITableViewController{
+@interface TagTable :UITableViewController
+{
     NSArray *students;
 }
 
@@ -20,5 +21,4 @@
 @property(retain)  NSIndexPath* lastIndexPath;
 @property (nonatomic, retain) NSArray *students;
 
-//@property (nonatomic, retain) NSString *Tags;
 @end
