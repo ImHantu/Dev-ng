@@ -33,15 +33,6 @@
     dispatch_async(kBgQueue, ^{
         NSData* data = [NSData dataWithContentsOfURL: googleRequestURL];
                [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
-        
-       /* int MainPoint.x=(PointA.x+PointB.x)/2;
-        MainPoint.y=(PointA.y+PointB.y)/2;
-        
-        for (int i=1; i<6; i++){
-            int radius=radius+100;
-            NSString *url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%@&types=%@&sensor=false&key=%@", MainPoint.x, MainPoint.y, [NSString stringWithFormat:@"%i", radius], googleType, kGOOGLE_API_KEY];
-
-        } */
     });
 }
 
@@ -94,8 +85,6 @@
  NSString *request = @"cafe";
  [self queryGooglePlaces: request];
      
-
-
      
  }
 
@@ -103,7 +92,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
  @end

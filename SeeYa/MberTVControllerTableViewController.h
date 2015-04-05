@@ -15,5 +15,3 @@
 }
 @property (nonatomic, retain) NSArray *TagArr;
 @end
-
-
