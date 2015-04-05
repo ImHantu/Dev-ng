@@ -22,11 +22,12 @@ NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
 
 - (void) recieve_coor {
     NSString *url2 = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=true&key=%@", ad1, KEY];
-    NSURL *googleRequestURL2=[NSURL URLWithString:url2];
+    NSURL *googleRequestURL2=[NSURL URLWithString:[url2 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSData* data2 = [NSData dataWithContentsOfURL: googleRequestURL2];
+    
     [self fetchedData1:data2:1];
     NSString *url3 = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=true&key=%@", ad2, KEY];
-    NSURL *googleRequestURL3=[NSURL URLWithString:url3];
+    NSURL *googleRequestURL3=[NSURL URLWithString:[url3 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSData* data3 = [NSData dataWithContentsOfURL: googleRequestURL3];
     [self fetchedData1:data3:2];
     //[self performSelectorOnMainThread:@selector(fetchedData1::) withObject:data2:ad1 waitUntilDone:YES];
