@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     self.title = @"Students";
     //Нужно увеличить кол-во статических ячеек в storyboard при добавлении тегов
-    self.students = [NSArray arrayWithObjects:@"Meal",/*@"cafe",@"restaurant", @"bakery", @"meal_takeaway",*/ @"Store",@"Library",@"Night Club",@"Museum",@"Park", nil];
+    self.students = [NSArray arrayWithObjects:@"",@"Meal",/*@"cafe",@"restaurant", @"bakery", @"meal_takeaway",*/ @"Store",@"Library",@"Night Club",@"Museum",@"Park", nil];
     TagStr = @"";
 }
 
@@ -38,17 +38,17 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
         switch(indexPath.row) {
-            case 0:
-                cell.imageView.image = [UIImage imageNamed:@"meal1.png"];                break;
             case 1:
-                cell.imageView.image = [UIImage imageNamed:@"store1.png"];                break;
+                cell.imageView.image = [UIImage imageNamed:@"meal1.png"];                break;
             case 2:
-                cell.imageView.image = [UIImage imageNamed:@"library1.png"];                break;
+                cell.imageView.image = [UIImage imageNamed:@"store1.png"];                break;
             case 3:
-                cell.imageView.image = [UIImage imageNamed:@"nightclub1.png"];                break;
+                cell.imageView.image = [UIImage imageNamed:@"library1.png"];                break;
             case 4:
-                cell.imageView.image = [UIImage imageNamed:@"museum1.png"];                break;
+                cell.imageView.image = [UIImage imageNamed:@"nightclub1.png"];                break;
             case 5:
+                cell.imageView.image = [UIImage imageNamed:@"museum1.png"];                break;
+            case 6:
                 cell.imageView.image = [UIImage imageNamed:@"park1.png"];                break;
             default:
                 break;

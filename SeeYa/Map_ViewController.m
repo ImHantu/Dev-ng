@@ -51,11 +51,13 @@ NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
             frcr = [NSMutableArray arrayWithObjects:
                     places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
         }
-        else{ urcr = [NSMutableArray arrayWithObjects:
+        else
+        {
+            urcr = [NSMutableArray arrayWithObjects:
                       places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
         }
     };
-}
+    NSLog(@"%@",urcr[0]);}
 
 - (IBAction)btn:(id)sender{
 
@@ -82,7 +84,7 @@ NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
         ad2 = [ad2 stringByAppendingString:@"Moscow"];
         [self recieve_coor];
         //переходн на след. view
-      gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"hello"];
+        withBar *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"Tag"];
         [self.navigationController pushViewController:gotoVC animated:YES];
 
     }
@@ -97,9 +99,9 @@ NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
 
     //Не показывает error
     [self.errorLabel setHidden:YES];
-   UIImage *btnImage = [UIImage imageNamed:@"check.png"];
+    UIImage *btnImage = [UIImage imageNamed:@"check.png"];
     [self.btn setImage:btnImage forState:UIControlStateNormal];
-   btnImage = [UIImage imageNamed:@"plus.png"];
+    btnImage = [UIImage imageNamed:@"plus.png"];
     [self.plusFriend setImage:btnImage forState:UIControlStateNormal];
     //Прячет плюс
     [self.plusFriend setHidden:YES];

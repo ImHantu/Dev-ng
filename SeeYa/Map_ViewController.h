@@ -14,9 +14,7 @@ NSString *ad1;
 NSString *ad2;
 NSString *lp;
 NSArray *uad, *fad;
-@interface Map_ViewController : UIViewController{
-    withBar *gotoVC;
-}
+@interface Map_ViewController : UIViewController
 
 @property (nonatomic, retain) withBar *gotoVC;
 @property (weak, nonatomic) IBOutlet UITextField *FrX;
@@ -27,7 +25,7 @@ NSArray *uad, *fad;
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak, nonatomic) IBOutlet UIButton *plusFriend;
 
-//-(void) fetchedData1:(NSData *)responseData: (int) side;
+-(void) fetchedData1:(NSData *)responseData: (int) side;
 - (void) recieve_coor;
 
 
