@@ -9,7 +9,6 @@
 #import "Map_ViewController.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "HelloPage.h"
-
 @interface Map_ViewController ()
 
 @end
@@ -32,6 +31,7 @@ NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
     [self fetchedData1:data3:2];
     //[self performSelectorOnMainThread:@selector(fetchedData1::) withObject:data2:ad1 waitUntilDone:YES];
 }
+
 
 -(void)fetchedData1:(NSData*) responseData: (int) side{
     //parse out the json data
@@ -58,33 +58,51 @@ NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
 }
 
 - (IBAction)btn:(id)sender{
-    uad = [ self.UrX.text componentsSeparatedByString: @" " ];
-    fad = [ self.FrX.text componentsSeparatedByString: @" " ];
-    ad1 = @"";
-    ad2 = @"";
-    for (int i=0; i<[uad count]; i++ )
+
+    //проверка на заполненость textField
+    if (([self.UrX.text isEqual:@""]) || ([self.FrX.text isEqual:@""])){
+        [self.errorLabel setHidden:NO];
+    }
+    else
     {
-        ad1 = [ad1 stringByAppendingString: [NSString stringWithFormat:@"%@+", uad[i]]];
-    };
-    ad1 = [ad1 stringByAppendingString:@"Moscow"];
-    for (int i=0; i<[fad count]; i++ )
-    {
-        ad2 = [ad2 stringByAppendingString: [NSString stringWithFormat:@"%@+", fad[i]]];
-    };
-    ad2 = [ad2 stringByAppendingString:@"Moscow"];
-    
-    [self recieve_coor];
+        uad = [ self.UrX.text componentsSeparatedByString: @" " ];
+        fad = [ self.FrX.text componentsSeparatedByString: @" " ];
+        
+        ad1 = @"";
+        ad2 = @"";
+        for (int i=0; i<[uad count]; i++ )
+        {
+            ad1 = [ad1 stringByAppendingString: [NSString stringWithFormat:@"%@+", uad[i]]];
+        };
+        ad1 = [ad1 stringByAppendingString:@"Moscow"];
+        for (int i=0; i<[fad count]; i++ )
+        {
+            ad2 = [ad2 stringByAppendingString: [NSString stringWithFormat:@"%@+", fad[i]]];
+        };
+        ad2 = [ad2 stringByAppendingString:@"Moscow"];
+        [self recieve_coor];
+        //переходн на след. view
+      gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"hello"];
+        [self.navigationController pushViewController:gotoVC animated:YES];
+
+    }
+
 }
 
 
 
 - (void)viewDidLoad {
     //вставить гифку
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bwall.jpg" ]];
+//    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@""]];
+
+    //Не показывает error
+    [self.errorLabel setHidden:YES];
    UIImage *btnImage = [UIImage imageNamed:@"check.png"];
     [self.btn setImage:btnImage forState:UIControlStateNormal];
    btnImage = [UIImage imageNamed:@"plus.png"];
     [self.plusFriend setImage:btnImage forState:UIControlStateNormal];
+    //Прячет плюс
+    [self.plusFriend setHidden:YES];
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.

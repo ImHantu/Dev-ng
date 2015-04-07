@@ -22,6 +22,7 @@
 		9179310D1A2B67A300A4D745 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179310C1A2B67A300A4D745 /* OpenGLES.framework */; };
 		9179310F1A2B67A900A4D745 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9179310E1A2B67A900A4D745 /* QuartzCore.framework */; };
 		917931111A2B67B100A4D745 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917931101A2B67B100A4D745 /* SystemConfiguration.framework */; };
+		C178419C1AD40706009B8A22 /* store1.png in Resources */ = {isa = PBXBuildFile; fileRef = C178419B1AD40706009B8A22 /* store1.png */; };
 		C194FA241AD06F07002D72E4 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = C194FA231AD06F07002D72E4 /* plus.png */; };
 		C1A0CB761ACC77310022C577 /* MberTVControllerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A0CB751ACC77310022C577 /* MberTVControllerTableViewController.m */; };
 		C1A8F0D51ACF75E100F2A058 /* bwall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1A8F0D41ACF75E100F2A058 /* bwall.jpg */; };
@@ -71,6 +72,7 @@
 		9179310C1A2B67A300A4D745 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		9179310E1A2B67A900A4D745 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		917931101A2B67B100A4D745 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C178419B1AD40706009B8A22 /* store1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store1.png; sourceTree = "<group>"; };
 		C194FA231AD06F07002D72E4 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		C1A0CB741ACC77310022C577 /* MberTVControllerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MberTVControllerTableViewController.h; sourceTree = "<group>"; };
 		C1A0CB751ACC77310022C577 /* MberTVControllerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MberTVControllerTableViewController.m; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		C1A8F0D31ACF75B800F2A058 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C178419B1AD40706009B8A22 /* store1.png */,
 				C194FA231AD06F07002D72E4 /* plus.png */,
 				C1D319A51AD06691004A92DF /* check.png */,
 				C1DCAEDD1AD00AEB001BD218 /* library1.png */,
@@ -344,6 +347,7 @@
 				915137831A3D76A100F2DB4F /* GoogleMaps.bundle in Resources */,
 				C1DCAEE51AD00AEB001BD218 /* nightclub1.png in Resources */,
 				C1DCAEE21AD00AEB001BD218 /* library1.png in Resources */,
+				C178419C1AD40706009B8A22 /* store1.png in Resources */,
 				C1A8F0D71ACF75F400F2A058 /* SeeYa.ico in Resources */,
 				C1DCAEE41AD00AEB001BD218 /* museum1.png in Resources */,
 			);

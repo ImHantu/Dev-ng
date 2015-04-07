@@ -20,7 +20,7 @@ NSString *APIKEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
 
 - (IBAction)Done:(id)sender {
     TagStr = [TagStr substringToIndex:[TagStr length]-1];
-    NSLog(TagStr);
+    NSLog(@"%@",TagStr);
     [self queryGooglePlaces: TagStr];
 }
 

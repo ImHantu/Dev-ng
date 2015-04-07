@@ -41,7 +41,7 @@
             case 0:
                 cell.imageView.image = [UIImage imageNamed:@"meal1.png"];                break;
             case 1:
-                cell.imageView.image = [UIImage imageNamed:@"store.png"];                break;
+                cell.imageView.image = [UIImage imageNamed:@"store1.png"];                break;
             case 2:
                 cell.imageView.image = [UIImage imageNamed:@"library1.png"];                break;
             case 3:
